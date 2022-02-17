@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+      integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css"
+      integrity="sha512-8Vtie9oRR62i7vkmVUISvuwOeipGv8Jd+Sur/ORKDD5JiLgTGeBSkI3ISOhc730VGvA5VVQPwKIKlmi+zMZ71w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div>
+        <div class="sidebar">
+          <a href="#">Fruits</a>
+          <a href="#">Fish</a>
+          <a href="#">Vegetable</a>
+          <a href="#">Dry-food</a>
+          <a href="#">Meat</a>
+        </div>
+        <div class="main-content">
+          <div>
+            <div class="bg-img">
+              <img src="./images/hero bg.png" alt="" />
+            </div>
+            <div class="heading"><h2>All Products</h2></div>
+          </div>
+
+          <div id="store-products">
+            <div class="store-product Fruits">
+              <img src="./images/Guava.png" alt="" />
+              <div class="product-details">
+                <button
+                  class="btn btn-dark addto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Fruits"
+                >
+                  Add to cart
+                </button>
+                <div id="button">
+                  <input type="radio" id="half" name="quantity" value="half" />
+                  <label for="half">half</label>
+                  <input type="radio" id="full" name="quantity" value="full" />
+                  <label for="full" id="fullLable">full</label>
+                  <button class="sub">-</button>
+                  <input
+                    type="text"
+                    id="qtyBox"
+                    class="inputBox"
+                    value="0"
+                    placeholder="quantity"
+                  />
+                  <button class="add">+</button>
+                </div>
+              </div>
+              <div class="product-details">
+                <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Fruits</h2>
+                <p>
+                  <span id="dollar">$39.99</span
+                  ><span id="non-dollar"> $29.99 </span>
+                </p>
+              </div>
+            </div>
+            <div class="store-product vegetable">
+              <img src="./images/vej.jpg" alt="" />
+              <div class="product-details">
+                <button
+                  class="btn btn-dark addto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#vegetable"
+                >
+                  Add to cart
+                </button>
+                <div id="button">
+                  <input type="radio" id="half" name="quantity" value="half" />
+                  <label for="half">half</label>
+                  <input type="radio" id="full" name="quantity" value="full" />
+                  <label for="full" id="fullLable">full</label>
+                  <button class="sub">-</button>
+                  <input
+                    type="text"
+                    id="qtyBox"
+                    class="inputBox"
+                    value="0"
+                    placeholder="quantity"
+                  />
+                  <button class="add">+</button>
+                </div>
+              </div>
+              <div class="product-details">
+                <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Vegetable</h2>
+                <p>
+                  <span id="dollar">$39.99</span
+                  ><span id="non-dollar"> $29.99 </span>
+                </p>
+              </div>
+            </div>
+            <div class="store-product Dry-food">
+              <img src="./images/dry.jpg" alt="" />
+              <div class="product-details">
+                <button
+                  class="btn btn-dark addto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#dry-food"
+                >
+                  Add to cart
+                </button>
+                <div id="button">
+                  <input type="radio" id="half" name="quantity" value="half" />
+                  <label for="half">half</label>
+                  <input type="radio" id="full" name="quantity" value="full" />
+                  <label for="full" id="fullLable">full</label>
+                  <button class="sub">-</button>
+                  <input
+                    type="text"
+                    id="qtyBox"
+                    class="inputBox"
+                    value="0"
+                    placeholder="quantity"
+                  />
+                  <button class="add">+</button>
+                </div>
+              </div>
+              <div class="product-details">
+                <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Dry-food</h2>
+                <p>
+                  <span id="dollar">$39.99</span
+                  ><span id="non-dollar"> $29.99 </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="store-product Fish">
+              <img src="./images/menu6.jpg" alt="" />
+              <div class="product-details">
+                <button
+                  class="btn btn-dark addto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Fish"
+                >
+                  Add to cart
+                </button>
+                <div id="button">
+                  <input type="radio" id="half" name="quantity" value="half" />
+                  <label for="half">half</label>
+                  <input type="radio" id="full" name="quantity" value="full" />
+                  <label for="full" id="fullLable">full</label>
+                  <button class="sub">-</button>
+                  <input
+                    type="text"
+                    id="qtyBox"
+                    class="inputBox"
+                    value="0"
+                    placeholder="quantity"
+                  />
+                  <button class="add">+</button>
+                </div>
+              </div>
+              <div class="product-details">
+                <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Fish</h2>
+                <p>
+                  <span id="dollar">$39.99</span
+                  ><span id="non-dollar"> $29.99 </span>
+                </p>
+              </div>
+            </div>
+
+            <div class="store-product Meat" id="Meat">
+              <img src="./images/menu3.png" alt="" />
+              <div class="product-details">
+                <button
+                  class="btn btn-dark addto"
+                  data-bs-toggle="modal"
+                  data-bs-target="#Meat"
+                >
+                  Add to cart
+                </button>
+                <div id="button">
+                  <input type="radio" id="half" name="quantity" value="half" />
+                  <label for="half">half</label>
+                  <input type="radio" id="full" name="quantity" value="full" />
+                  <label for="full" id="fullLable">full</label>
+                  <button class="sub">-</button>
+                  <input
+                    type="text"
+                    id="qtyBox"
+                    class="inputBox"
+                    value="0"
+                    placeholder="quantity"
+                  />
+                  <button class="add">+</button>
+                </div>
+              </div>
+              <div class="product-details">
+                <div class="star-icon">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <h2>Meat</h2>
+                <p>
+                  <span id="dollar">$39.99</span
+                  ><span id="non-dollar"> $29.99 </span>
+                </p>
+              </div>
+            </div>
+            <!-- Modal for meat -->
+            <div
+              class="modal fade"
+              id="Meat"
+              tabindex="-1"
+              aria-labelledby="Meat"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="Meat">Steck Meat</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="./images/menu3.png" alt="" />
+                        </div>
+                        <div class="col-md-6">
+                          <h1>Steak Meatt</h1>
+                          <div class="star-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <p>
+                            <span id="dollar">$39.99</span
+                            ><span id="non-dollar"> $29.99 </span>
+                          </p>
+                          <div>
+                            <button class="sub">-</button>
+                            <input
+                              type="text"
+                              id="qtyBox"
+                              class="inputBox"
+                              value="0"
+                              placeholder="quantity"
+                            />
+                            <button class="add">+</button>
+                          </div>
+                          <div class="btn-G">
+                            <button type="button" class="btn btn-primary">
+                              Add to cart
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-danger"
+                            >
+                              Buy now
+                            </button>
+                          </div>
+                          <div class="details-foot">
+                            <p class="icon-o">
+                              Add to wish list<i class="fa-solid fa-heart"></i>
+                            </p>
+                            <p class="icon-o">
+                              Add to compare<i
+                                class="fa-solid fa-code-compare"
+                              ></i>
+                            </p>
+                            <p class="icon-o">
+                              Share<i class="fa-solid fa-share"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal for meat -->
+            <!-- Modal for Fruits -->
+            <div
+              class="modal fade"
+              id="Fruits"
+              tabindex="-1"
+              aria-labelledby="Fruits"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="Fruits">Fruits</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="./images/Guava.png" alt="" />
+                        </div>
+                        <div class="col-md-6">
+                          <h1>Fruits</h1>
+                          <div class="star-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <p>
+                            <span id="dollar">$39.99</span
+                            ><span id="non-dollar"> $29.99 </span>
+                          </p>
+                          <div>
+                            <button class="sub">-</button>
+                            <input
+                              type="text"
+                              id="qtyBox"
+                              class="inputBox"
+                              value="0"
+                              placeholder="quantity"
+                            />
+                            <button class="add">+</button>
+                          </div>
+                          <div class="btn-G">
+                            <button type="button" class="btn btn-primary">
+                              Add to cart
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-danger"
+                            >
+                              Buy now
+                            </button>
+                          </div>
+                          <div class="details-foot">
+                            <p class="icon-o">
+                              Add to wish list<i class="fa-solid fa-heart"></i>
+                            </p>
+                            <p class="icon-o">
+                              Add to compare<i
+                                class="fa-solid fa-code-compare"
+                              ></i>
+                            </p>
+                            <p class="icon-o">
+                              Share<i class="fa-solid fa-share"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal For Fruits -->
+
+            <!-- Modal for Fish -->
+            <div
+              class="modal fade"
+              id="Fish"
+              tabindex="-1"
+              aria-labelledby="Fish"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="Fish">Fruits</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="./images/menu6.jpg" alt="" />
+                        </div>
+                        <div class="col-md-6">
+                          <h1>Fish</h1>
+                          <div class="star-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <p>
+                            <span id="dollar">$39.99</span
+                            ><span id="non-dollar"> $29.99 </span>
+                          </p>
+                          <div>
+                            <button class="sub">-</button>
+                            <input
+                              type="text"
+                              id="qtyBox"
+                              class="inputBox"
+                              value="0"
+                              placeholder="quantity"
+                            />
+                            <button class="add">+</button>
+                          </div>
+                          <div class="btn-G">
+                            <button type="button" class="btn btn-primary">
+                              Add to cart
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-danger"
+                            >
+                              Buy now
+                            </button>
+                          </div>
+                          <div class="details-foot">
+                            <p class="icon-o">
+                              Add to wish list<i class="fa-solid fa-heart"></i>
+                            </p>
+                            <p class="icon-o">
+                              Add to compare<i
+                                class="fa-solid fa-code-compare"
+                              ></i>
+                            </p>
+                            <p class="icon-o">
+                              Share<i class="fa-solid fa-share"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal for Fish -->
+            <!-- Modal for Vegis -->
+            <div
+              class="modal fade"
+              id="vegetable"
+              tabindex="-1"
+              aria-labelledby="vegetable"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="vegetable">Fruits</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="./images/vej.jpg" alt="" />
+                        </div>
+                        <div class="col-md-6">
+                          <h1>Vegetable</h1>
+                          <div class="star-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <p>
+                            <span id="dollar">$39.99</span
+                            ><span id="non-dollar"> $29.99 </span>
+                          </p>
+                          <div>
+                            <button class="sub">-</button>
+                            <input
+                              type="text"
+                              id="qtyBox"
+                              class="inputBox"
+                              value="0"
+                              placeholder="quantity"
+                            />
+                            <button class="add">+</button>
+                          </div>
+                          <div class="btn-G">
+                            <button type="button" class="btn btn-primary">
+                              Add to cart
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-danger"
+                            >
+                              Buy now
+                            </button>
+                          </div>
+                          <div class="details-foot">
+                            <p class="icon-o">
+                              Add to wish list<i class="fa-solid fa-heart"></i>
+                            </p>
+                            <p class="icon-o">
+                              Add to compare<i
+                                class="fa-solid fa-code-compare"
+                              ></i>
+                            </p>
+                            <p class="icon-o">
+                              Share<i class="fa-solid fa-share"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal for Vegis -->
+            <!-- Modal for Dry food -->
+            <div
+              class="modal fade"
+              id="dry-food"
+              tabindex="-1"
+              aria-labelledby="dry-food"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 class="modal-title" id="dry-food">Dry-Food</h2>
+                  </div>
+                  <div class="modal-body">
+                    <div class="container-fluid">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <img src="./images/dry.jpg" alt="" />
+                        </div>
+                        <div class="col-md-6">
+                          <h1>Dry-food</h1>
+                          <div class="star-icon">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                          </div>
+                          <p>
+                            <span id="dollar">$39.99</span
+                            ><span id="non-dollar"> $29.99 </span>
+                          </p>
+                          <div>
+                            <button class="sub">-</button>
+                            <input
+                              type="text"
+                              id="qtyBox"
+                              class="inputBox"
+                              value="0"
+                              placeholder="quantity"
+                            />
+                            <button class="add">+</button>
+                          </div>
+                          <div class="btn-G">
+                            <button type="button" class="btn btn-primary">
+                              Add to cart
+                            </button>
+                            <button
+                              type="button"
+                              class="btn btn-outline-danger"
+                            >
+                              Buy now
+                            </button>
+                          </div>
+                          <div class="details-foot">
+                            <p class="icon-o">
+                              Add to wish list<i class="fa-solid fa-heart"></i>
+                            </p>
+                            <p class="icon-o">
+                              Add to compare<i
+                                class="fa-solid fa-code-compare"
+                              ></i>
+                            </p>
+                            <p class="icon-o">
+                              Share<i class="fa-solid fa-share"></i>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Modal for Dry food -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap link -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+      integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+      integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/all.min.js"
+      integrity="sha512-yFjZbTYRCJodnuyGlsKamNE/LlEaEAxSUDe5+u61mV8zzqJVFOH7TnULE2/PP/l5vKWpUNnF4VGVkXh3MjgLsg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/js/fontawesome.min.js"
+      integrity="sha512-PoFg70xtc+rAkD9xsjaZwIMkhkgbl1TkoaRrgucfsct7SVy9KvTj5LtECit+ZjQ3ts+7xWzgfHOGzdolfWEgrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
